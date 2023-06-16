@@ -2,7 +2,9 @@ import React from 'react';
 import styles from './card.module.scss'
 import Aside from "../Catalog/components/Aside/Aside";
 import Navigation from "./components/Navigation";
+import Top from "./components/Top";
 const Card = () => {
+
     return (
         <section className={styles.catalog}>
             <div className="container">
@@ -12,7 +14,7 @@ const Card = () => {
                 <div className={styles.card__row}>
                     <Aside/>
                     <div className={styles.card}>
-                      <Card/>
+                      <Top/>
                      <Navigation/>
                     </div>
                 </div>

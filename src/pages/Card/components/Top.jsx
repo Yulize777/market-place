@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from "../card.module.scss";
-
 const Top = () => {
     return (
         <div className={styles.card__top}>
