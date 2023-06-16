@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from "../card.module.scss";
-
+import {useDispatch, useSelector} from "react-redux";
+import {increment,decrement} from "../../../store/reducers/cardSlice";
 const Navigation = () => {
+    const {value} = useSelector((state) => state.cardSlice)
+    const dispatch = useDispatch()
     return (
         <div className={styles.card__navigation}>
             <div className={styles.card__navigation__contForArrows}>
@@ -24,9 +27,9 @@ const Navigation = () => {
             </div>
             <div className={styles.card__navigation__contForCart}>
                 <div className={styles.card__navigation__contForCart__contForQuantity}>
-                    <div className={styles.card__navigation__contForCart__contForQuantity__smallCube}>-</div>
-                    <div className={styles.card__navigation__contForCart__contForQuantity__bigCube}>01</div>
-                    <div className={styles.card__navigation__contForCart__contForQuantity__smallCube}>+</div>
+                    <div className={styles.card__navigation__contForCart__contForQuantity__smallCube} onClick={() => dispatch(decrement(1))}>-</div>
+                    <div className={styles.card__navigation__contForCart__contForQuantity__bigCube}>{value < 10 ? '0' + value : value}</div>
+                    <div className={styles.card__navigation__contForCart__contForQuantity__smallCube} onClick={() => dispatch(increment(1))}>+</div>
                 </div>
                 <div className={styles.card__navigation__contForCart__contForSending}>
                     <div className={styles.card__navigation__contForCart__contForSending__text}>В КОРЗИНУ</div>
