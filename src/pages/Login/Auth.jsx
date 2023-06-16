@@ -34,7 +34,7 @@ const Auth = () => {
         <div className={style.question__container}>
           <span className={style.question}>Не зарегистрированы?</span>
           <Link to="/register" className={style.register__link}>
-            Регистрация
+            Войти
           </Link>
         </div>
       </div>
