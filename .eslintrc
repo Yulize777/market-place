@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest"
+  ],
+  "rules": {
+//    "quotes": ["error","double"],
+//    "jsx-quotes": ["error","prefer-double"],
+//    "prefer-const": "error"
+  }
+}
