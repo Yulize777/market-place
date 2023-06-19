@@ -3,42 +3,6 @@
     margin: 0 auto;
 }
 
-.section__top {
-    height: 620px;
-    background-image: url(./images/main-bg.png);
-    background-size: cover;
-}
-
-.section__top .cont {
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.section__top h1 {
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 52px;
-}
-
-.section__top a {
-    cursor: pointer;
-    border: 4px solid #D42E12;
-    padding: 10px 20px;
-    margin: 10px 0;
-    background: transparent;
-    color: #fff;
-    transition: .3s all ease;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: max-content;
-}
-
-.section__top a:hover {
-    background-color: #D42E12;
-}
-
 .section__list {
     height: 272px;
     background-color: #0E0E0E;

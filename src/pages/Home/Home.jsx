@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Card1 from './images/card1.svg'
 import Card2 from './images/card2.svg'
 import Card3 from './images/card3.svg'
@@ -12,12 +12,6 @@ import styles from './Home.module.css'
 const Home = () => {
     return (
         <main className={styles.main}>
-            <section className={styles.section__top}>
-                <div className={styles.cont}>
-                    <h1>НАДЕЖНЫЕ,<br />КАЧЕСТВЕННЫЕ<br />АККУМУЛЯТОРЫ</h1>
-                    <Link>Перейти в каталог</Link>
-                </div>
-            </section>
             <section className={styles.section__list}>
                 <div className={styles.cont}>
                     <article className={styles.card_notched}>

@@ -49,7 +49,7 @@ export default function Cart() {
     
     useEffect(() => {
         setSumArr(dataArr.map((e, i) => e.actualPrice * quantity[i]))
-    }, [quantity, dataArr, sumArr])
+    }, [quantity, dataArr])
     return (
         <main className={styles.main}>
             <div className={styles.cont}>
