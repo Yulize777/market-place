@@ -12,10 +12,10 @@ const Register = () => {
           </div>
           <div className={style.register__info}>
             <div>
-              <label htmlFor="" className={style.register__label}>
+              <label htmlFor="name" className={style.register__label}>
                 Имя
               </label>
-              <input type="text" name="" className={style.register__input} />
+              <input type="text" name="name" id={'name'} className={style.register__input} />
             </div>
             <div>
               <div>

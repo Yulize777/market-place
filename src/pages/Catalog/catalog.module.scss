@@ -41,13 +41,13 @@
     &__contForRow{
       display: flex;
       flex-direction: column;
-      row-gap: 36px;
+      gap: 36px;
       width: 75%;
     }
     &__row{
       display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(265px,1fr));
+      gap: 1.5rem;
       width: 100%;
       &__card{
         display: flex;

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './catalog.module.scss'
-import {IoIosArrowForward} from 'react-icons/io'
 import Aside from "./components/Aside/Aside";
 import Row from "./components/Row/Row";
 import Data from "./components/Data/Data";
