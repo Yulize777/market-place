@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import styles from "../../catalog.module.scss";
 import {useDispatch, useSelector} from "react-redux";
-import {getData} from "../../../../store/reducers/catalogSlice";
+import {getData} from "../../../../store/thunks/catalogGetData";
 
 const Row = () => {
     const dispatch = useDispatch()
