@@ -17,9 +17,10 @@ const App = () => {
         <Route element={<Catalog />} path={'catalog'} />
         <Route element={<Card />} path={'catalog/:id'} />
         <Route element={<Cart/>} path={'/cart'} />
+
+      </Route>
         <Route element={<Register />} path="/register" />
         <Route element={<Auth />} path="/auth" />
-      </Route>
       <Route path={'*'} element={<NotFound />} />
     </Routes>
   );
