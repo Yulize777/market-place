@@ -55,7 +55,7 @@ const Register = () => {
               <label htmlFor="" className={style.register__label}>
                 Пароль{' '}
               </label>
-              <input type="password" name="" className={style.register__input}
+              <input style={{border: errors.password && '4px solid red'}} type="password" name="" className={style.register__input}
                      {...register('password',{
                        required: {
                          value: true,
@@ -67,12 +67,15 @@ const Register = () => {
                        }
                      })}
               />
+              <span className={style.register__span}>
+                {errors.password && errors.password.message}
+              </span>
             </div>
             <div>
               <label htmlFor="" className={style.register__label}>
                 Подтвердить пароль{' '}
               </label>
-              <input type="password" name="" className={style.register__input}
+              <input style={{border: errors.passwordConfirm && '4px solid red'}} type="password" name="" className={style.register__input}
                      {...register('passwordConfirm',{
                        required: {
                          value: true,
