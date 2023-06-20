@@ -55,7 +55,15 @@
     align-items: center;
     width: 420px;
     height: 30px;
-
+    color: black;
+    outline: none;
+}
+.register__span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: red;
+    margin-top: 5px;
 }
 
 .register__btn {
